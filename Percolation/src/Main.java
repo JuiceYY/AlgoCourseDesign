@@ -8,6 +8,7 @@ public class Main {
     public static void main(String[] args) {
         int n;
         int t;
+        System.out.println("Input the matrix size n and the test times t in two lines:");
 
         Scanner scanner = new Scanner(System.in);
         n = Integer.parseInt(scanner.nextLine());
@@ -16,7 +17,6 @@ public class Main {
 
         PercolationStats percolationStats = new PercolationStats(n, t);
 
-        System.out.println("Input the matrix size n and the test times t in two lines:");
         System.out.println("With" +t+ " tests, each test has "+n+"*"+n +" sites:");
         System.out.println("the mean of p = "+ percolationStats.mean());
         System.out.println("the standard deviation of p = "+ percolationStats.stddev());
